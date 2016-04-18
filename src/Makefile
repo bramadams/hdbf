@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -s -O2
+CFLAGS = -Wall -Wextra -pedantic -O2
 FILES = optimize.c binarytree.c hdbf.c main.c
-hdbfmake: $(OBJECTS)
+hdbf: $(OBJECTS)
 	$(CC) -o hdbf $(FILES) $(CFLAGS)
